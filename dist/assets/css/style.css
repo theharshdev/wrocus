@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  background-color: white;
+  width: 5px;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000945;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.main-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.secondary-font {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.movableImg {
+  transition: 0.2s linear;
+}
+
+.movableImgAnimate {
+  transition: 0.1s linear;
+  animation: animateImages 7s linear infinite;
+}
+
+.movableImgAnimate {
+  transition: 0.1s linear;
+  animation: animateImages 7s linear infinite;
+}
+
+.transition-delay {
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+  .movableImgAnimate {
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+    -o-animation-play-state: paused;
+  }
+}
+
+.animateTxt {
+  animation: animateTxt 7s linear infinite;
+}
+
+@keyframes animateTxt {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animateTxt-box:hover .animateTxt {
+  animation-play-state: paused;
+}
