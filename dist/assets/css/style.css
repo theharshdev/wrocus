@@ -78,7 +78,3 @@ input[type="number"] {
     transform: translateX(-100%);
   }
 }
-
-.animateTxt-box:hover .animateTxt {
-  animation-play-state: paused;
-}
