@@ -25,10 +25,12 @@
   </head>
 
   <body>
+    <!-- Textured background -->
     <div
       class="z-0 fixed top-0 left-0 w-full h-full"
       style="background-image: url(assets/images/bg.webp)"
     ></div>
+    <!-- Background lines -->
     <div class="fixed top-0 left-1/2 -translate-x-1/2 w-4/5 h-full z-10">
       <div class="flex justify-between w-full h-full">
         <div class="w-px bg-[#000945]/20 h-full"></div>
@@ -36,113 +38,137 @@
         <div class="w-px bg-[#000945]/20 h-full"></div>
       </div>
     </div>
-    <div class="z-20 relative">
-      <!-- Navbar -->
-      <nav
-        class="fixed top-0 w-full z-50 border-b border-[#000945]/20"
-        style="background-image: url(assets/images/bg.webp)"
+    <!-- Crosses -->
+    <div
+      class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-4/5 bg-transparent pointer-events-none z-30 mix-blend-difference opacityZero opacity-0"
+    >
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 flex items-center leading-none text-white text-base"
       >
-        <div
-          class="flex md:items-center justify-between py-4 px-5 relative z-20"
+        <i class="bi bi-x w-[12px]"></i>
+        <i class="bi bi-x w-[12px]"></i>
+      </div>
+      <div
+        class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center leading-none text-white mix-blend-difference text-base"
+      >
+        <i class="bi bi-x w-[12px]"></i>
+        <i class="bi bi-x w-[12px]"></i>
+      </div>
+      <div
+        class="absolute left-0 top-1/2 -translate-y-1/2 -rotate-90 flex items-center leading-none text-white mix-blend-difference text-base"
+      >
+        <i class="bi bi-x w-[12px]"></i>
+        <i class="bi bi-x w-[12px]"></i>
+      </div>
+      <div
+        class="absolute right-0 top-1/2 -translate-y-1/2 rotate-90 flex items-center leading-none text-white mix-blend-difference text-base"
+      >
+        <i class="bi bi-x w-[12px]"></i>
+        <i class="bi bi-x w-[12px]"></i>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <nav
+      class="fixed top-0 w-full z-50 border-b border-[#000945]/20"
+      style="background-image: url(assets/images/bg.webp)"
+    >
+      <div class="flex md:items-center justify-between py-4 px-5 relative z-20">
+        <a href="index.html">
+          <img
+            src="assets/images/wrocus-logo-black.webp"
+            alt="company logo"
+            class="opacity-90 w-14 md:hidden block"
+          />
+          <img
+            src="assets/images/wrocus-full-logo-black.webp"
+            alt="company logo"
+            class="opacity-90 w-36 md:block hidden"
+          />
+        </a>
+        <button
+          id="openMenu"
+          type="button"
+          class="md:hidden block text-[#000945] text-3xl scale-x-[2]"
         >
-          <a href="index.html">
-            <img
-              src="assets/images/wrocus-logo-black.webp"
-              alt="company logo"
-              class="opacity-90 w-14 md:hidden block"
-            />
-            <img
-              src="assets/images/wrocus-full-logo-black.webp"
-              alt="company logo"
-              class="opacity-90 w-36 md:block hidden"
-            />
-          </a>
+          <i class="bi bi-list"></i>
+        </button>
+        <div
+          id="menuBox"
+          class="flex-wrap items-center gap-7 md:w-auto w-56 md:bg-transparent bg-white md:p-0 p-5 rounded-xl relative md:shadow-none shadow-lg md:flex hidden md:border-none border border-[#000945]"
+        >
+          <div class="flex justify-end md:w-auto w-full">
+            <button id="closeMenu" type="button" class="md:hidden inline-block">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div
+            class="text-[#000945] md:text-base text-sm font-medium md:w-auto w-full md:m-0 mb-3 relative group cursor-pointer"
+          >
+            <div class="flex items-center gap-1 main-font md:py-1 italic">
+              Services<i
+                class="bi bi-chevron-down group-hover:rotate-180 transition-all"
+              ></i>
+            </div>
+            <div
+              class="md:absolute top-8 left-0 hidden group-hover:block md:w-56 transition-all overflow-hidden"
+            >
+              <div
+                class="md:bg-white/20 backdrop-blur-md bg-transparent md:p-5 ps-3 pt-3 md:rounded-lg border border-[#000945]/20"
+              >
+                <a
+                  href="#"
+                  class="text-[#000945] text-sm font-medium md:w-auto w-full main-font flex gap-1 hover:opacity-70 italic pb-2"
+                  >Web Developement<i class="bi bi-arrow-up-right"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-[#000945] text-sm font-medium md:w-auto w-full main-font flex gap-1 hover:opacity-70 italic pb-2"
+                  >App Developement<i class="bi bi-arrow-up-right"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-[#000945] text-sm font-medium md:w-auto w-full main-font flex gap-1 hover:opacity-70 italic pb-2"
+                  >Machine Learning<i class="bi bi-arrow-up-right"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-[#000945] text-sm font-medium md:w-auto w-full main-font flex gap-1 hover:opacity-70 italic pb-2"
+                  >Quality Analysis<i class="bi bi-arrow-up-right"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-[#000945] text-sm font-medium md:w-auto w-full main-font flex gap-1 hover:opacity-70 italic"
+                  >IT Consulting<i class="bi bi-arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="text-[#000945] md:text-base text-sm font-medium md:w-auto w-full main-font md:m-0 mb-3 block hover:opacity-70 italic"
+            >Protfolio</a
+          >
+          <a
+            href="#"
+            class="text-[#000945] md:text-base text-sm font-medium md:w-auto w-full main-font md:m-0 mb-3 block hover:opacity-70 italic"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="text-[#000945] md:text-base text-sm font-medium md:w-auto w-full main-font block hover:opacity-70 md:hidden italic"
+            >About</a
+          >
           <button
-            id="openMenu"
             type="button"
-            class="md:hidden block text-[#000945] text-3xl scale-x-[2]"
+            class="text-[#000945] md:text-3xl text-2xl scale-x-[2] md:block hover:opacity-70 hidden"
           >
             <i class="bi bi-list"></i>
           </button>
-          <div
-            id="menuBox"
-            class="flex-wrap items-center gap-7 md:w-auto w-56 md:bg-transparent bg-white md:p-0 p-5 rounded-xl relative md:shadow-none shadow-lg md:flex hidden md:border-none border border-[#000945]"
-          >
-            <div class="flex justify-end md:w-auto w-full">
-              <button
-                id="closeMenu"
-                type="button"
-                class="md:hidden inline-block"
-              >
-                <i class="bi bi-x-lg"></i>
-              </button>
-            </div>
-            <div
-              class="text-[#000945] md:text-base text-sm font-medium md:w-auto w-full md:m-0 mb-3 relative group cursor-pointer"
-            >
-              <div class="flex items-center gap-1 main-font md:py-1 italic">
-                Services<i
-                  class="bi bi-chevron-down group-hover:rotate-180 transition-all"
-                ></i>
-              </div>
-              <div
-                class="md:absolute top-8 left-0 hidden group-hover:block md:w-56 transition-all overflow-hidden"
-              >
-                <div
-                  class="md:bg-white/20 backdrop-blur-md bg-transparent md:p-5 ps-3 pt-3 md:rounded-lg border border-[#000945]/20"
-                >
-                  <a
-                    href="#"
-                    class="text-[#000945] text-sm font-medium md:w-auto w-full main-font flex gap-1 hover:opacity-70 italic pb-2"
-                    >Web Developement<i class="bi bi-arrow-up-right"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="text-[#000945] text-sm font-medium md:w-auto w-full main-font flex gap-1 hover:opacity-70 italic pb-2"
-                    >App Developement<i class="bi bi-arrow-up-right"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="text-[#000945] text-sm font-medium md:w-auto w-full main-font flex gap-1 hover:opacity-70 italic pb-2"
-                    >Machine Learning<i class="bi bi-arrow-up-right"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="text-[#000945] text-sm font-medium md:w-auto w-full main-font flex gap-1 hover:opacity-70 italic pb-2"
-                    >Quality Analysis<i class="bi bi-arrow-up-right"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="text-[#000945] text-sm font-medium md:w-auto w-full main-font flex gap-1 hover:opacity-70 italic"
-                    >IT Consulting<i class="bi bi-arrow-up-right"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <a
-              href="#"
-              class="text-[#000945] md:text-base text-sm font-medium md:w-auto w-full main-font md:m-0 mb-3 block hover:opacity-70 italic"
-              >Protfolio</a
-            >
-            <a
-              href="#"
-              class="text-[#000945] md:text-base text-sm font-medium md:w-auto w-full main-font md:m-0 mb-3 block hover:opacity-70 italic"
-              >Contact</a
-            >
-            <a
-              href="#"
-              class="text-[#000945] md:text-base text-sm font-medium md:w-auto w-full main-font block hover:opacity-70 md:hidden italic"
-              >About</a
-            >
-            <button
-              type="button"
-              class="text-[#000945] md:text-3xl text-2xl scale-x-[2] md:block hover:opacity-70 hidden"
-            >
-              <i class="bi bi-list"></i>
-            </button>
-          </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <!-- Remaining body -->
+    <div class="z-20 relative">
       <!-- Hero section -->
       <div
         class="lg:px-6 md:px-5 sm:px-4 px-3 py-10 mt-5 h-screen flex justify-center items-center"
@@ -180,7 +206,7 @@
               </div>
             </h3>
             <div
-              class="text-[#000945] font-normal text-sm leading-none px-3 text-center mt-5 opacityZero opacity-0"
+              class="text-[#000945] font-normal text-sm leading-none px-3 text-center mt-3 opacityZero opacity-0"
             >
               We create ® resonating brands
             </div>
@@ -861,7 +887,7 @@
           <div class="flex justify-center mb-16">
             <div class="text-center">
               <h3
-                class="text-[#000945] text-8xl main-font font-normal leading-none animateFromBottom translate-y-full opacity-0"
+                class="text-[#000945] text-8xl main-font font-light leading-none animateFromBottom translate-y-full opacity-0"
               >
                 Services we provide
               </h3>
@@ -1653,14 +1679,16 @@
         </div>
       </div>
       <!-- Footer -->
-      <footer class="mt-32 border-t border-[#000945]/20 overflow-hidden">
-        <div class="lg:px-8 md:px-6 sm:px-5 px-3 py-20">
-          <div>
+      <footer
+        class="mt-32 border-t border-[#000945]/20 bg-white/30 backdrop-blur-sm overflow-hidden"
+      >
+        <div class="lg:px-8 md:px-6 sm:px-5 px-3 py-32">
+          <div class="flex justify-between">
             <div>
               <div>
                 <a
                   href="#"
-                  class="text-[#000945] hover:underline text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
+                  class="text-[#000945] hover:underline decoration-1 text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
                 >
                   About
                 </a>
@@ -1668,7 +1696,7 @@
               <div>
                 <a
                   href="#"
-                  class="text-[#000945] hover:underline text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
+                  class="text-[#000945] hover:underline decoration-1 text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
                 >
                   Careers
                 </a>
@@ -1676,7 +1704,7 @@
               <div>
                 <a
                   href="#"
-                  class="text-[#000945] hover:underline text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
+                  class="text-[#000945] hover:underline decoration-1 text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
                 >
                   Contact
                 </a>
@@ -1684,7 +1712,7 @@
               <div>
                 <a
                   href="#"
-                  class="text-[#000945] hover:underline text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
+                  class="text-[#000945] hover:underline decoration-1 text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
                 >
                   Work
                 </a>
@@ -1692,19 +1720,85 @@
               <div>
                 <a
                   href="#"
-                  class="text-[#000945] hover:underline text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
+                  class="text-[#000945] hover:underline decoration-1 text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
                 >
                   Services
                 </a>
               </div>
             </div>
+            <div class="flex gap-6">
+              <div>
+                <h3 class="text-[#000945]/80 text-2xl font-light leading-none">
+                  <div>
+                    <a
+                      href="#"
+                      class="text-[#000945] hover:underline decoration-1 text-3xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
+                    >
+                      C Block, Sector 65, Noida, <br />
+                      Uttar Pradesh
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="#"
+                      class="text-[#000945] hover:underline decoration-1 text-3xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
+                    >
+                      0120-496-3453
+                    </a>
+                  </div>
+                </h3>
+              </div>
+              <div>
+                <div>
+                  <a
+                    href="#"
+                    class="text-[#000945] hover:underline decoration-1 text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
+                  >
+                    Linkedin
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="text-[#000945] hover:underline decoration-1 text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
+                  >
+                    Instagram
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="text-[#000945] hover:underline decoration-1 text-xl leading-none font-light mb-3 hover:text-black animateFromBottom translate-y-full opacity-0 inline-block"
+                  >
+                    Twitter
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center mt-24">
             <div class="opacity-80">
               <img
                 src="assets/images/wrocus-logo-black.webp"
                 alt="..."
-                class="w-24 inline-block mt-24 animateFromLeft -translate-x-full opacity-0"
+                class="w-24 inline-block animateFromLeft -translate-x-full opacity-0"
               />
             </div>
+            <div>
+              <a
+                href="#"
+                class="text-[#000945] hover:underline decoration-1 text-7xl secondary-font leading-none font-light hover:text-black animateFromRight translate-x-full opacity-0 inline-block"
+              >
+                info@wrocus.com
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-center mt-20">
+            <p
+              class="text-[#000945] text-xl font-normal main-font animateFromBottom translate-y-full opacity-0 leading-none h-auto"
+            >
+              © 2024
+            </p>
           </div>
         </div>
       </footer>
