@@ -7,6 +7,7 @@ const serviceMenu = document.getElementById("serviceMenu");
 const serviceOpen = document.getElementById("serviceOpen");
 const popup = document.getElementById("popup");
 const openPopup = document.getElementById("openPopup");
+const cursor = document.getElementById("cursor");
 const closePopup = document.getElementById("closePopup");
 const wrocustext = document.getElementById("wrocustext");
 const body = document.querySelector("body");
@@ -60,10 +61,22 @@ window.addEventListener("click", (e) => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
-    navbar.classList.add("bg-black");
+    navbar.classList.add("bg-[#005064]");
   } else {
-    navbar.classList.remove("bg-black");
+    navbar.classList.remove("bg-[#005064]");
   }
+});
+
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function () {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    navbar.style.top = "-60px";
+  } else {
+    navbar.style.top = "0";
+  }
+  lastScrollTop = scrollTop;
 });
 
 let serviceMenuOpen = false;
@@ -140,4 +153,32 @@ window.addEventListener("load", () => {
 window.addEventListener("scroll", () => {
   animateFromBottom();
   animateOpacityFull();
+});
+
+window.addEventListener("mousemove", (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+
+  cursor.style.top = `${y}px`;
+  cursor.style.left = `${x}px`;
+  cursor.classList.remove("hidden");
+});
+
+window.addEventListener("mouseout", () => {
+  cursor.classList.add("hidden");
+});
+
+const changeImg = document.getElementById("changeImg");
+const webDevelopmentBtn = document.getElementById("webDevelopmentBtn");
+const appDevelopmentBtn = document.getElementById("appDevelopmentBtn");
+const machineLearningBtn = document.getElementById("machineLearningBtn");
+
+webDevelopmentBtn.addEventListener("click", () => {
+  changeImg.setAttribute("src", "assets/images/webDevelopment.jpg");
+});
+appDevelopmentBtn.addEventListener("click", () => {
+  changeImg.setAttribute("src", "assets/images/appDevelopment.jpg");
+});
+machineLearningBtn.addEventListener("click", () => {
+  changeImg.setAttribute("src", "assets/images/machineLearning.jpg");
 });
