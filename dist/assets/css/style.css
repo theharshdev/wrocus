@@ -31,3 +31,16 @@ input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
+
+.animateTxt {
+  animation: animateTxt 9s linear infinite;
+}
+
+@keyframes animateTxt {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
