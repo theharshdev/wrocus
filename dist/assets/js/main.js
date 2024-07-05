@@ -124,10 +124,10 @@ function animateFromBottom() {
   animateFromBottoms.forEach((animateFromBottom) => {
     const rect = animateFromBottom.getBoundingClientRect();
     if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-      animateFromBottom.classList.remove("translate-y-32", "opacity-0");
+      animateFromBottom.classList.remove("translate-y-1/2", "opacity-0");
       animateFromBottom.style.transition = "1s";
     } else {
-      animateFromBottom.classList.add("translate-y-32", "opacity-0");
+      animateFromBottom.classList.add("translate-y-1/2", "opacity-0");
       animateFromBottom.style.transition = "0s";
     }
   });
