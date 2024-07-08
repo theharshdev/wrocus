@@ -100,7 +100,7 @@ openPopup.addEventListener("click", () => {
   wrocustext.classList.remove("opacity-0");
   wrocustext.style.transition = "1.5s";
   animatefromBottomNavs.forEach((animatefromBottomNav) => {
-    animatefromBottomNav.classList.remove("opacity-0", "translate-y-full");
+    animatefromBottomNav.classList.remove("opacity-0", "translate-y-1/2");
     animatefromBottomNav.style.transition = "1s";
   });
 });
@@ -112,7 +112,7 @@ closePopup.addEventListener("click", () => {
   wrocustext.classList.add("opacity-0");
   wrocustext.style.transition = "0s";
   animatefromBottomNavs.forEach((animatefromBottomNav) => {
-    animatefromBottomNav.classList.add("opacity-0", "translate-y-full");
+    animatefromBottomNav.classList.add("opacity-0", "translate-y-1/2");
     animatefromBottomNav.style.transition = "0s";
   });
 });
@@ -174,11 +174,11 @@ const appDevelopmentBtn = document.getElementById("appDevelopmentBtn");
 const machineLearningBtn = document.getElementById("machineLearningBtn");
 
 webDevelopmentBtn.addEventListener("click", () => {
-  changeImg.setAttribute("src", "assets/images/webDevelopment.jpg");
+  changeImg.setAttribute("src", "assets/images/webDevelopment.webp");
 });
 appDevelopmentBtn.addEventListener("click", () => {
-  changeImg.setAttribute("src", "assets/images/appDevelopment.jpg");
+  changeImg.setAttribute("src", "assets/images/appDevelopment.webp");
 });
 machineLearningBtn.addEventListener("click", () => {
-  changeImg.setAttribute("src", "assets/images/machineLearning.jpg");
+  changeImg.setAttribute("src", "assets/images/machineLearning.webp");
 });
