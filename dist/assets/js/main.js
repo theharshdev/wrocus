@@ -61,9 +61,9 @@ window.addEventListener("click", (e) => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
-    navbar.classList.add("bg-[#005064]");
+    navbar.classList.add("bg-slate-800");
   } else {
-    navbar.classList.remove("bg-[#005064]");
+    navbar.classList.remove("bg-slate-800");
   }
 });
 
