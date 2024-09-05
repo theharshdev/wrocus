@@ -15,6 +15,7 @@ const animatefromBottomNavs = document.querySelectorAll(
   ".animatefromBottomNav"
 );
 const serviceTxtAnimates = document.querySelectorAll(".serviceTxtAnimate");
+const numberAnimes = document.querySelectorAll(".numberAnimes");
 let dropdownOpen = false;
 
 dropdownBtn.addEventListener("click", (e) => {
@@ -182,3 +183,16 @@ appDevelopmentBtn.addEventListener("click", () => {
 machineLearningBtn.addEventListener("click", () => {
   changeImg.setAttribute("src", "assets/images/machineLearning.webp");
 });
+
+function numberAnimeFnc() {
+  numberAnimes.forEach((numberAnime, index) => {
+    const rect = numberAnime.getBoundingClientRect();
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+      const numberAnimeTxt = numberAnime.innerContent;
+      console.log(numberAnimeTxt);
+    } else {
+    }
+  });
+}
+
+window.addEventListener("scroll", numberAnimeFnc);
