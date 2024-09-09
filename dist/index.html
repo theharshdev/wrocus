@@ -242,7 +242,7 @@
     >
       <div class="flex justify-between items-center gap-5">
         <!-- logo -->
-        <a href="index.html" class="z-50 relative opacity-80">
+        <a href="index.html" class="z-50 relative">
           <img
             src="assets/images/devMojoLogo.webp"
             alt="..."
@@ -1539,6 +1539,21 @@
           disableOnInteraction: false,
         },
         loop: true,
+      });
+
+      const changeImg = document.getElementById("changeImg");
+      const webDevelopmentBtn = document.getElementById("webDevelopmentBtn");
+      const appDevelopmentBtn = document.getElementById("appDevelopmentBtn");
+      const machineLearningBtn = document.getElementById("machineLearningBtn");
+
+      webDevelopmentBtn.addEventListener("click", () => {
+        changeImg.setAttribute("src", "assets/images/webDevelopment.webp");
+      });
+      appDevelopmentBtn.addEventListener("click", () => {
+        changeImg.setAttribute("src", "assets/images/appDevelopment.webp");
+      });
+      machineLearningBtn.addEventListener("click", () => {
+        changeImg.setAttribute("src", "assets/images/machineLearning.webp");
       });
     </script>
     <script src="assets/js/main.js"></script>

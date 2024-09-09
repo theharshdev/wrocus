@@ -168,31 +168,3 @@ window.addEventListener("mousemove", (e) => {
 window.addEventListener("mouseout", () => {
   cursor.classList.add("hidden");
 });
-
-const changeImg = document.getElementById("changeImg");
-const webDevelopmentBtn = document.getElementById("webDevelopmentBtn");
-const appDevelopmentBtn = document.getElementById("appDevelopmentBtn");
-const machineLearningBtn = document.getElementById("machineLearningBtn");
-
-webDevelopmentBtn.addEventListener("click", () => {
-  changeImg.setAttribute("src", "assets/images/webDevelopment.webp");
-});
-appDevelopmentBtn.addEventListener("click", () => {
-  changeImg.setAttribute("src", "assets/images/appDevelopment.webp");
-});
-machineLearningBtn.addEventListener("click", () => {
-  changeImg.setAttribute("src", "assets/images/machineLearning.webp");
-});
-
-function numberAnimeFnc() {
-  numberAnimes.forEach((numberAnime, index) => {
-    const rect = numberAnime.getBoundingClientRect();
-    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-      const numberAnimeTxt = numberAnime.innerContent;
-      console.log(numberAnimeTxt);
-    } else {
-    }
-  });
-}
-
-window.addEventListener("scroll", numberAnimeFnc);
