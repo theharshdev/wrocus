@@ -18,6 +18,20 @@ const serviceTxtAnimates = document.querySelectorAll(".serviceTxtAnimate");
 const numberAnimes = document.querySelectorAll(".numberAnimes");
 let dropdownOpen = false;
 
+window.addEventListener("mousemove", (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+
+  cursor.style.top = `-0.5rem`;
+  cursor.style.left = `-0.5rem`;
+  cursor.style.transform = `translate(${x}px, ${y}px)`;
+  cursor.classList.remove("hidden");
+});
+
+window.addEventListener("mouseout", () => {
+  cursor.classList.add("hidden");
+});
+
 dropdownBtn.addEventListener("click", (e) => {
   if (dropdownOpen) {
     dropdown.classList.add("h-0");
@@ -124,7 +138,7 @@ const animateOpacityFulls = document.querySelectorAll(".animateOpacityFull");
 function animateFromBottom() {
   animateFromBottoms.forEach((animateFromBottom) => {
     const rect = animateFromBottom.getBoundingClientRect();
-    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+    if (rect.top <= window.innerHeight * 1.25 && rect.bottom >= 0) {
       animateFromBottom.classList.remove("translate-y-1/2", "opacity-0");
       animateFromBottom.style.transition = "1s";
     } else {
@@ -137,7 +151,7 @@ function animateFromBottom() {
 function animateOpacityFull() {
   animateOpacityFulls.forEach((animateOpacityFull) => {
     const rect = animateOpacityFull.getBoundingClientRect();
-    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+    if (rect.top <= window.innerHeight * 1.25 && rect.bottom >= 0) {
       animateOpacityFull.classList.remove("opacity-0");
       animateOpacityFull.style.transition = "1.5s";
     } else {
@@ -156,15 +170,13 @@ window.addEventListener("scroll", () => {
   animateOpacityFull();
 });
 
-window.addEventListener("mousemove", (e) => {
-  const x = e.clientX;
-  const y = e.clientY;
+// Smooth scrolling -----------------
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-  cursor.style.top = `${y}px`;
-  cursor.style.left = `${x}px`;
-  cursor.classList.remove("hidden");
-});
-
-window.addEventListener("mouseout", () => {
-  cursor.classList.add("hidden");
+// Initialize ScrollSmoother for smooth scrolling
+ScrollSmoother.create({
+  wrapper: ".smooth-wrapper",
+  content: ".smooth-content",
+  smooth: 1.8,
+  effects: true,
 });

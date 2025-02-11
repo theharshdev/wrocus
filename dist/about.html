@@ -21,6 +21,9 @@
     <link href="assets/css/output.css" rel="stylesheet" />
     <!-- Custom CSS File Link -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
     <title>Wrocus Technologies</title>
   </head>
 
@@ -29,8 +32,8 @@
     <div class="mix-blend-difference relative z-[99999] lg:block hidden">
       <div
         id="cursor"
-        class="w-4 h-4 rounded-full overflow-hidden bg-white z-[99999] fixed -translate-x-1/2 -translate-y-1/2 pointer-events-none hidden"
-        style="transition: 0.15s linear"
+        class="w-4 h-4 rounded-full overflow-hidden bg-white z-[99999] fixed pointer-events-none hidden"
+        style="transition: 0.2s linear"
       ></div>
     </div>
     <!-- Popup -->
@@ -338,712 +341,732 @@
         </div>
       </div>
     </nav>
-    <!-- Hero section -->
-    <section>
-      <video
-        src="assets/images/aboutbg.mp4"
-        autoplay
-        muted
-        loop
-        class="fixed top-0 left-0 h-[60vh] w-full -z-10 object-cover"
-      ></video>
-      <div
-        class="lg:px-10 md:px-8 sm:px-6 px-4 h-[60vh] relative w-full overflow-hidden z-10"
-      >
-        <h3
-          class="text-[40vw] font-extrabold absolute bottom-0 translate-y-1/4 right-0 pointer-events-none leading-none text-[#D1E9F6] z-0"
-        >
-          about
-        </h3>
-      </div>
-      <div class="bg-[#D1E9F6] lg:px-10 md:px-8 sm:px-6 px-4 py-32">
-        <h3
-          class="md:text-4xl text-3xl lg:w-1/2 md:w-2/3 sm:w-3/4 w-full font-extralight text-slate-800 leading-none animateFromBottom translate-y-1/2 opacity-0"
-        >
-          We help businesses elevate their value through custom software
-          development, product design, QA and consultancy services.
-        </h3>
-        <div
-          class="flex mt-32 justify-between items-center md:flex-nowrap flex-wrap text-slate-800 font-extralight text-4xl leading-none text-center gap-8"
-        >
-          <div class="w-full">
-            <h3 class="animateFromBottom translate-y-1/2 opacity-0">105+</h3>
-            <p
-              class="text-xl uppercase leading-none text-slate-700 mt-3 animateFromBottom translate-y-1/2 opacity-0"
-            >
-              ACTIVE CLIENTS
-            </p>
-          </div>
-          <div class="w-full">
-            <h3 class="animateFromBottom translate-y-1/2 opacity-0">400+</h3>
-            <p
-              class="text-xl uppercase leading-none text-slate-700 mt-3 animateFromBottom translate-y-1/2 opacity-0"
-            >
-              PROJECTS DONE
-            </p>
-          </div>
-          <div class="w-full">
-            <h3 class="animateFromBottom translate-y-1/2 opacity-0">15+</h3>
-            <p
-              class="text-xl uppercase leading-none text-slate-700 mt-3 animateFromBottom translate-y-1/2 opacity-0"
-            >
-              TEAM ADVISORS
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Our mission -->
-    <section class="bg-white">
-      <div class="flex border-y border-slate-800 flex-wrap">
-        <div
-          class="lg:w-1/4 md:w-1/2 w-full group relative md:border-e lg:border-b-0 border-b border-slate-800"
-        >
+    <video
+      src="assets/images/aboutbg.mp4"
+      autoplay
+      muted
+      loop
+      class="fixed top-0 left-0 h-[60vh] w-full -z-10 object-cover"
+    ></video>
+    <section class="smooth-wrapper">
+      <section class="smooth-content">
+        <!-- Hero section -->
+        <section>
           <div
-            class="overflow-hidden lg:min-h-[320px] md:min-h-[260px] min-h-[250px] h-full flex justify-center items-center animateFromBottom translate-y-1/2 opacity-0"
+            class="lg:px-10 md:px-8 sm:px-6 px-4 h-[60vh] relative w-full overflow-hidden z-10"
           >
-            <p
-              class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-normal text-3xl group-hover:-scale-x-100 group-hover:opacity-0"
-              style="transition: 0.3s"
-            >
-              Our Mission
-            </p>
-            <p
-              class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-light text-xl -scale-x-100 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"
-              style="transition: 0.3s"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              rem libero eaque recusandae, odio nam.
-            </p>
-          </div>
-        </div>
-        <div
-          class="lg:w-1/4 md:w-1/2 w-full group relative lg:border-e lg:border-b-0 border-b border-slate-800"
-        >
-          <div
-            class="overflow-hidden lg:min-h-[320px] md:min-h-[260px] min-h-[250px] h-full flex justify-center items-center animateFromBottom translate-y-1/2 opacity-0"
-          >
-            <p
-              class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-normal text-3xl group-hover:-scale-x-100 group-hover:opacity-0"
-              style="transition: 0.3s"
-            >
-              Our Values
-            </p>
-            <p
-              class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-light text-xl -scale-x-100 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"
-              style="transition: 0.3s"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              rem libero eaque recusandae, odio nam.
-            </p>
-          </div>
-        </div>
-        <div
-          class="lg:w-1/4 md:w-1/2 w-full group relative md:border-e md:border-b-0 border-b border-slate-800"
-        >
-          <div
-            class="overflow-hidden lg:min-h-[320px] md:min-h-[260px] min-h-[250px] h-full flex justify-center items-center animateFromBottom translate-y-1/2 opacity-0"
-          >
-            <p
-              class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-normal text-3xl group-hover:-scale-x-100 group-hover:opacity-0"
-              style="transition: 0.3s"
-            >
-              Our Philosophy
-            </p>
-            <p
-              class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-light text-xl -scale-x-100 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"
-              style="transition: 0.3s"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              rem libero eaque recusandae, odio nam.
-            </p>
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full group relative">
-          <div
-            class="overflow-hidden lg:min-h-[320px] md:min-h-[260px] min-h-[250px] h-full flex justify-center items-center animateFromBottom translate-y-1/2 opacity-0"
-          >
-            <p
-              class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-normal text-3xl group-hover:-scale-x-100 group-hover:opacity-0"
-              style="transition: 0.3s"
-            >
-              Our Strategy
-            </p>
-            <p
-              class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-light text-xl -scale-x-100 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"
-              style="transition: 0.3s"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              rem libero eaque recusandae, odio nam.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Five pillars -->
-    <section>
-      <div class="bg-white py-32 lg:px-10 md:px-8 sm:px-6 px-4">
-        <div class="flex justify-center mb-20">
-          <h3
-            class="text-slate-800 md:text-3xl text-2xl font-normal text-center lg:w-1/2 md:w-2/3 sm:w-3/4 w-full animateFromBottom translate-y-1/2 opacity-0"
-          >
-            WROCUS is known to make IT happen with end-to-end engineering with
-            strict deadlines. Our deep strategic organization is built on the
-            five pillars.
-          </h3>
-        </div>
-        <div class="flex justify-center flex-wrap">
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
-            <div
-              class="border border-zinc-200/80 rounded-2xl lg:p-8 md:p-7 sm:p-6 p-5 animateFromBottom translate-y-1/2 opacity-0 h-full"
-            >
-              <img src="assets/images/skillSet.webp" alt="..." />
-              <p class="text-slate-800 text-xl font-light text-center mt-6">
-                People with right skills sets
-              </p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
-            <div
-              class="border border-zinc-200/80 rounded-2xl lg:p-8 md:p-7 sm:p-6 p-5 animateFromBottom translate-y-1/2 opacity-0 h-full"
-            >
-              <img src="assets/images/marketLaunch.webp" alt="..." />
-              <p class="text-slate-800 text-xl font-light text-center mt-6">
-                Process ideas from concept to market launch
-              </p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
-            <div
-              class="border border-zinc-200/80 rounded-2xl lg:p-8 md:p-7 sm:p-6 p-5 animateFromBottom translate-y-1/2 opacity-0 h-full"
-            >
-              <img src="assets/images/latestTech.webp" alt="..." />
-              <p class="text-slate-800 text-xl font-light text-center mt-6">
-                Adoption of latest Technology
-              </p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
-            <div
-              class="border border-zinc-200/80 rounded-2xl lg:p-8 md:p-7 sm:p-6 p-5 animateFromBottom translate-y-1/2 opacity-0 h-full"
-            >
-              <img src="assets/images/scalable.webp" alt="..." />
-              <p class="text-slate-800 text-xl font-light text-center mt-6">
-                Scalability and customization of each prototype
-              </p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
-            <div
-              class="border border-zinc-200/80 rounded-2xl lg:p-8 md:p-7 sm:p-6 p-5 animateFromBottom translate-y-1/2 opacity-0 h-full"
-            >
-              <img src="assets/images/reusable.webp" alt="..." />
-              <p class="text-slate-800 text-xl font-light text-center mt-6">
-                Usability of design in enterprise eco-system
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- TECHNOLOGY INDEX -->
-    <section class="bg-white relative overflow-hidden">
-      <div class="pb-32 lg:px-20 md:px-10 sm:px-8 px-4 relative z-10">
-        <div class="lg:w-1/2">
-          <p
-            class="text-zinc-600 text-sm font-medium leading-none animateFromBottom translate-y-1/2 opacity-0"
-          >
-            TECHNOLOGY INDEX
-          </p>
-          <h3
-            class="text-slate-800 lg:text-5xl md:text-4xl text-3xl font-medium leading-none animateFromBottom translate-y-1/2 opacity-0"
-          >
-            We Deliver Solution with the Goal of Trusting Relationships
-          </h3>
-        </div>
-        <div class="flex justify-center flex-wrap mt-20">
-          <div
-            class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full lg:p-8 md:p-6 sm:p-5 p-4"
-          >
-            <div
-              class="bg-white p-8 rounded-lg h-full group animateFromBottom translate-y-1/2 opacity-0"
-            >
-              <div>
-                <i
-                  class="bi bi-apple text-slate-400 text-5xl inline-block group-hover:scale-110 animateFromBottom translate-y-1/2 opacity-0"
-                  style="transition: 0.3s"
-                ></i>
-              </div>
-              <h3
-                class="text-slate-800 text-3xl font-medium leading-none mt-10 animateFromBottom translate-y-1/2 opacity-0"
-              >
-                iOS
-              </h3>
-              <p
-                class="text-sm font-medium mt-6 text-zinc-500 animateFromBottom translate-y-1/2 opacity-0"
-              >
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium cum quia unde hic dolore rem!
-              </p>
-            </div>
-          </div>
-          <div
-            class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full lg:p-8 md:p-6 sm:p-5 p-4"
-          >
-            <div
-              class="bg-white p-8 rounded-lg h-full group animateFromBottom translate-y-1/2 opacity-0"
-            >
-              <div>
-                <i
-                  class="bi bi-android2 text-slate-400 text-5xl inline-block group-hover:scale-110 animateFromBottom translate-y-1/2 opacity-0"
-                  style="transition: 0.3s"
-                ></i>
-              </div>
-              <h3
-                class="text-slate-800 text-3xl font-medium leading-none mt-10 animateFromBottom translate-y-1/2 opacity-0"
-              >
-                Android
-              </h3>
-              <p
-                class="text-sm font-medium mt-6 text-zinc-500 animateFromBottom translate-y-1/2 opacity-0"
-              >
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium cum quia unde hic dolore rem!
-              </p>
-            </div>
-          </div>
-          <div
-            class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full lg:p-8 md:p-6 sm:p-5 p-4"
-          >
-            <div
-              class="bg-white p-8 rounded-lg h-full group animateFromBottom translate-y-1/2 opacity-0"
-            >
-              <div class="flex items-center gap-3">
-                <i
-                  class="bi bi-rocket-takeoff text-slate-400 text-5xl inline-block group-hover:scale-110 animateFromBottom translate-y-1/2 opacity-0"
-                  style="transition: 0.3s"
-                ></i>
-              </div>
-              <h3
-                class="text-slate-800 text-3xl font-medium leading-none mt-10 animateFromBottom translate-y-1/2 opacity-0"
-              >
-                Web
-              </h3>
-              <p
-                class="text-sm font-medium mt-6 text-zinc-500 animateFromBottom translate-y-1/2 opacity-0"
-              >
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium cum quia unde hic dolore rem!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact -->
-    <section class="relative overflow-hidden bg-[#D1E9F6]">
-      <div class="lg:px-20 md:px-10 sm:px-8 px-4 relative z-20 py-32">
-        <div class="flex justify-center">
-          <div class="lg:w-2/3 text-center">
             <h3
-              class="text-slate-800 lg:text-5xl md:text-4xl text-3xl font-normal leading-none animateFromBottom translate-y-1/2 opacity-0"
+              class="text-[40vw] font-extrabold absolute bottom-0 translate-y-1/4 right-0 pointer-events-none leading-none text-[#D1E9F6] z-0"
             >
-              We endeavour to answer all enquiries within 24 hours on business
-              days.
+              about
             </h3>
-            <p
-              class="text-sm font-normal text-slate-600 mt-3 animateFromBottom translate-y-1/2 opacity-0"
+          </div>
+          <div class="bg-[#D1E9F6] lg:px-10 md:px-8 sm:px-6 px-4 py-32">
+            <h3
+              class="md:text-4xl text-3xl lg:w-1/2 md:w-2/3 sm:w-3/4 w-full font-extralight text-slate-800 leading-none animateFromBottom translate-y-1/2 opacity-0"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
-              Saepe reiciendis doloremque voluptate.
-            </p>
+              We help businesses elevate their value through custom software
+              development, product design, QA and consultancy services.
+            </h3>
             <div
-              class="flex justify-center animateFromBottom translate-y-1/2 opacity-0"
+              class="flex mt-32 justify-between items-center md:flex-nowrap flex-wrap text-slate-800 font-extralight text-4xl leading-none text-center gap-8"
             >
-              <a
-                href="contact.html"
-                class="bg-white hover:bg-black hover:text-white transition-all py-4 px-7 rounded-full text-slate-800 font-semibold text-lg leading-none mt-5 flex items-center justify-center gap-1"
-                >Contact<i
-                  class="bi bi-arrow-up-right leading-none text-base"
-                ></i
-              ></a>
+              <div class="w-full">
+                <h3 class="animateFromBottom translate-y-1/2 opacity-0">
+                  105+
+                </h3>
+                <p
+                  class="text-xl uppercase leading-none text-slate-700 mt-3 animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  ACTIVE CLIENTS
+                </p>
+              </div>
+              <div class="w-full">
+                <h3 class="animateFromBottom translate-y-1/2 opacity-0">
+                  400+
+                </h3>
+                <p
+                  class="text-xl uppercase leading-none text-slate-700 mt-3 animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  PROJECTS DONE
+                </p>
+              </div>
+              <div class="w-full">
+                <h3 class="animateFromBottom translate-y-1/2 opacity-0">15+</h3>
+                <p
+                  class="text-xl uppercase leading-none text-slate-700 mt-3 animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  TEAM ADVISORS
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- Reviews -->
-    <section class="bg-white">
-      <div class="py-32 bg-sky-100/40 lg:px-8 md:px-7 sm:px-6 px-4">
-        <h3
-          class="text-slate-800 lg:text-4xl md:text-3xl text-2xl font-medium leading-none text-center animateFromBottom translate-y-1/2 opacity-0"
-        >
-          We are Trusted 5+ <br />
-          Countries Worldwide
-        </h3>
-        <div class="flex justify-center flex-wrap mt-10">
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-4">
+        </section>
+        <!-- Our mission -->
+        <section class="bg-white">
+          <div class="flex border-y border-slate-800 flex-wrap">
             <div
-              class="bg-white lg:p-10 md:p-8 sm:p-7 p-6 rounded-2xl h-full animateFromBottom translate-y-1/2 opacity-0"
+              class="lg:w-1/4 md:w-1/2 w-full group relative md:border-e lg:border-b-0 border-b border-slate-800"
             >
               <div
-                class="flex items-center gap-5 justify-center flex-wrap text-center"
+                class="overflow-hidden lg:min-h-[320px] md:min-h-[260px] min-h-[250px] h-full flex justify-center items-center animateFromBottom translate-y-1/2 opacity-0"
               >
-                <img
-                  src="assets/images/timeInternet.webp"
-                  alt="..."
-                  class="w-32"
-                />
-                <div class="w-full">
-                  <h3 class="text-2xl font-medium text-slate-800 leading-none">
-                    Times Internet LTd
-                  </h3>
-                  <p
-                    class="text-slate-600 font-normal leading-none text-base mt-1"
-                  >
-                    Head of Technology
+                <p
+                  class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-normal text-3xl group-hover:-scale-x-100 group-hover:opacity-0"
+                  style="transition: 0.3s"
+                >
+                  Our Mission
+                </p>
+                <p
+                  class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-light text-xl -scale-x-100 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"
+                  style="transition: 0.3s"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus rem libero eaque recusandae, odio nam.
+                </p>
+              </div>
+            </div>
+            <div
+              class="lg:w-1/4 md:w-1/2 w-full group relative lg:border-e lg:border-b-0 border-b border-slate-800"
+            >
+              <div
+                class="overflow-hidden lg:min-h-[320px] md:min-h-[260px] min-h-[250px] h-full flex justify-center items-center animateFromBottom translate-y-1/2 opacity-0"
+              >
+                <p
+                  class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-normal text-3xl group-hover:-scale-x-100 group-hover:opacity-0"
+                  style="transition: 0.3s"
+                >
+                  Our Values
+                </p>
+                <p
+                  class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-light text-xl -scale-x-100 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"
+                  style="transition: 0.3s"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus rem libero eaque recusandae, odio nam.
+                </p>
+              </div>
+            </div>
+            <div
+              class="lg:w-1/4 md:w-1/2 w-full group relative md:border-e md:border-b-0 border-b border-slate-800"
+            >
+              <div
+                class="overflow-hidden lg:min-h-[320px] md:min-h-[260px] min-h-[250px] h-full flex justify-center items-center animateFromBottom translate-y-1/2 opacity-0"
+              >
+                <p
+                  class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-normal text-3xl group-hover:-scale-x-100 group-hover:opacity-0"
+                  style="transition: 0.3s"
+                >
+                  Our Philosophy
+                </p>
+                <p
+                  class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-light text-xl -scale-x-100 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"
+                  style="transition: 0.3s"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus rem libero eaque recusandae, odio nam.
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full group relative">
+              <div
+                class="overflow-hidden lg:min-h-[320px] md:min-h-[260px] min-h-[250px] h-full flex justify-center items-center animateFromBottom translate-y-1/2 opacity-0"
+              >
+                <p
+                  class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-normal text-3xl group-hover:-scale-x-100 group-hover:opacity-0"
+                  style="transition: 0.3s"
+                >
+                  Our Strategy
+                </p>
+                <p
+                  class="text-slate-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 text-center font-light text-xl -scale-x-100 group-hover:scale-x-100 opacity-0 group-hover:opacity-100"
+                  style="transition: 0.3s"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus rem libero eaque recusandae, odio nam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Five pillars -->
+        <section>
+          <div class="bg-white py-32 lg:px-10 md:px-8 sm:px-6 px-4">
+            <div class="flex justify-center mb-20">
+              <h3
+                class="text-slate-800 md:text-3xl text-2xl font-normal text-center lg:w-1/2 md:w-2/3 sm:w-3/4 w-full animateFromBottom translate-y-1/2 opacity-0"
+              >
+                WROCUS is known to make IT happen with end-to-end engineering
+                with strict deadlines. Our deep strategic organization is built
+                on the five pillars.
+              </h3>
+            </div>
+            <div class="flex justify-center flex-wrap">
+              <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
+                <div
+                  class="border border-zinc-200/80 rounded-2xl lg:p-8 md:p-7 sm:p-6 p-5 animateFromBottom translate-y-1/2 opacity-0 h-full"
+                >
+                  <img src="assets/images/skillSet.webp" alt="..." />
+                  <p class="text-slate-800 text-xl font-light text-center mt-6">
+                    People with right skills sets
                   </p>
                 </div>
               </div>
-              <p class="text-slate-700 font-normal text-base mt-8">
-                "Very well thought out and articulate communication. Clear
-                milestones, deadlines and fast work. Patience. Infinite
-                patience. No shortcuts. Even if the client is being careless.
-                The best part...always solving problems with great original
-                ideas!."
-              </p>
-            </div>
-          </div>
-          <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-4">
-            <div
-              class="bg-white lg:p-10 md:p-8 sm:p-7 p-6 rounded-2xl h-full animateFromBottom translate-y-1/2 opacity-0"
-            >
-              <div
-                class="flex items-center gap-5 justify-center flex-wrap text-center"
-              >
-                <img src="assets/images/htLogo.webp" alt="..." class="w-32" />
-                <div class="w-full">
-                  <h3 class="text-2xl font-medium text-slate-800 leading-none">
-                    Hindustan Times
-                  </h3>
-                  <p
-                    class="text-slate-600 font-normal leading-none text-base mt-1"
-                  >
-                    Senior Program Manager
+              <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
+                <div
+                  class="border border-zinc-200/80 rounded-2xl lg:p-8 md:p-7 sm:p-6 p-5 animateFromBottom translate-y-1/2 opacity-0 h-full"
+                >
+                  <img src="assets/images/marketLaunch.webp" alt="..." />
+                  <p class="text-slate-800 text-xl font-light text-center mt-6">
+                    Process ideas from concept to market launch
                   </p>
                 </div>
               </div>
-              <p class="text-slate-700 font-normal text-base mt-8">
-                "Patience. Infinite patience. No shortcuts. Very well thought
-                out and articulate communication. Clear milestones, deadlines
-                and fast work. Even if the client is being careless. The best
-                part...always solving problems with great original ideas!."
-              </p>
+              <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
+                <div
+                  class="border border-zinc-200/80 rounded-2xl lg:p-8 md:p-7 sm:p-6 p-5 animateFromBottom translate-y-1/2 opacity-0 h-full"
+                >
+                  <img src="assets/images/latestTech.webp" alt="..." />
+                  <p class="text-slate-800 text-xl font-light text-center mt-6">
+                    Adoption of latest Technology
+                  </p>
+                </div>
+              </div>
+              <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
+                <div
+                  class="border border-zinc-200/80 rounded-2xl lg:p-8 md:p-7 sm:p-6 p-5 animateFromBottom translate-y-1/2 opacity-0 h-full"
+                >
+                  <img src="assets/images/scalable.webp" alt="..." />
+                  <p class="text-slate-800 text-xl font-light text-center mt-6">
+                    Scalability and customization of each prototype
+                  </p>
+                </div>
+              </div>
+              <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-3">
+                <div
+                  class="border border-zinc-200/80 rounded-2xl lg:p-8 md:p-7 sm:p-6 p-5 animateFromBottom translate-y-1/2 opacity-0 h-full"
+                >
+                  <img src="assets/images/reusable.webp" alt="..." />
+                  <p class="text-slate-800 text-xl font-light text-center mt-6">
+                    Usability of design in enterprise eco-system
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+        <!-- TECHNOLOGY INDEX -->
+        <section class="bg-white relative overflow-hidden">
+          <div class="pb-32 lg:px-20 md:px-10 sm:px-8 px-4 relative z-10">
+            <div class="lg:w-1/2">
+              <p
+                class="text-zinc-600 text-sm font-medium leading-none animateFromBottom translate-y-1/2 opacity-0"
+              >
+                TECHNOLOGY INDEX
+              </p>
+              <h3
+                class="text-slate-800 lg:text-5xl md:text-4xl text-3xl font-medium leading-none animateFromBottom translate-y-1/2 opacity-0"
+              >
+                We Deliver Solution with the Goal of Trusting Relationships
+              </h3>
+            </div>
+            <div class="flex justify-center flex-wrap mt-20">
+              <div
+                class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full lg:p-8 md:p-6 sm:p-5 p-4"
+              >
+                <div
+                  class="bg-white p-8 rounded-lg h-full group animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  <div>
+                    <i
+                      class="bi bi-apple text-slate-400 text-5xl inline-block group-hover:scale-110 animateFromBottom translate-y-1/2 opacity-0"
+                      style="transition: 0.3s"
+                    ></i>
+                  </div>
+                  <h3
+                    class="text-slate-800 text-3xl font-medium leading-none mt-10 animateFromBottom translate-y-1/2 opacity-0"
+                  >
+                    iOS
+                  </h3>
+                  <p
+                    class="text-sm font-medium mt-6 text-zinc-500 animateFromBottom translate-y-1/2 opacity-0"
+                  >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium cum quia unde hic dolore rem!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full lg:p-8 md:p-6 sm:p-5 p-4"
+              >
+                <div
+                  class="bg-white p-8 rounded-lg h-full group animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  <div>
+                    <i
+                      class="bi bi-android2 text-slate-400 text-5xl inline-block group-hover:scale-110 animateFromBottom translate-y-1/2 opacity-0"
+                      style="transition: 0.3s"
+                    ></i>
+                  </div>
+                  <h3
+                    class="text-slate-800 text-3xl font-medium leading-none mt-10 animateFromBottom translate-y-1/2 opacity-0"
+                  >
+                    Android
+                  </h3>
+                  <p
+                    class="text-sm font-medium mt-6 text-zinc-500 animateFromBottom translate-y-1/2 opacity-0"
+                  >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium cum quia unde hic dolore rem!
+                  </p>
+                </div>
+              </div>
+              <div
+                class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full lg:p-8 md:p-6 sm:p-5 p-4"
+              >
+                <div
+                  class="bg-white p-8 rounded-lg h-full group animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  <div class="flex items-center gap-3">
+                    <i
+                      class="bi bi-rocket-takeoff text-slate-400 text-5xl inline-block group-hover:scale-110 animateFromBottom translate-y-1/2 opacity-0"
+                      style="transition: 0.3s"
+                    ></i>
+                  </div>
+                  <h3
+                    class="text-slate-800 text-3xl font-medium leading-none mt-10 animateFromBottom translate-y-1/2 opacity-0"
+                  >
+                    Web
+                  </h3>
+                  <p
+                    class="text-sm font-medium mt-6 text-zinc-500 animateFromBottom translate-y-1/2 opacity-0"
+                  >
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium cum quia unde hic dolore rem!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact -->
+        <section class="relative overflow-hidden bg-[#D1E9F6]">
+          <div class="lg:px-20 md:px-10 sm:px-8 px-4 relative z-20 py-32">
+            <div class="flex justify-center">
+              <div class="lg:w-2/3 text-center">
+                <h3
+                  class="text-slate-800 lg:text-5xl md:text-4xl text-3xl font-normal leading-none animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  We endeavour to answer all enquiries within 24 hours on
+                  business days.
+                </h3>
+                <p
+                  class="text-sm font-normal text-slate-600 mt-3 animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  <br />
+                  Saepe reiciendis doloremque voluptate.
+                </p>
+                <div
+                  class="flex justify-center animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  <a
+                    href="contact.html"
+                    class="bg-white hover:bg-black hover:text-white transition-all py-4 px-7 rounded-full text-slate-800 font-semibold text-lg leading-none mt-5 flex items-center justify-center gap-1"
+                    >Contact<i
+                      class="bi bi-arrow-up-right leading-none text-base"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Reviews -->
+        <section class="bg-white">
+          <div class="py-32 bg-sky-100/40 lg:px-8 md:px-7 sm:px-6 px-4">
+            <h3
+              class="text-slate-800 lg:text-4xl md:text-3xl text-2xl font-medium leading-none text-center animateFromBottom translate-y-1/2 opacity-0"
+            >
+              We are Trusted 5+ <br />
+              Countries Worldwide
+            </h3>
+            <div class="flex justify-center flex-wrap mt-10">
+              <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-4">
+                <div
+                  class="bg-white lg:p-10 md:p-8 sm:p-7 p-6 rounded-2xl h-full animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  <div
+                    class="flex items-center gap-5 justify-center flex-wrap text-center"
+                  >
+                    <img
+                      src="assets/images/timeInternet.webp"
+                      alt="..."
+                      class="w-32"
+                    />
+                    <div class="w-full">
+                      <h3
+                        class="text-2xl font-medium text-slate-800 leading-none"
+                      >
+                        Times Internet LTd
+                      </h3>
+                      <p
+                        class="text-slate-600 font-normal leading-none text-base mt-1"
+                      >
+                        Head of Technology
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-slate-700 font-normal text-base mt-8">
+                    "Very well thought out and articulate communication. Clear
+                    milestones, deadlines and fast work. Patience. Infinite
+                    patience. No shortcuts. Even if the client is being
+                    careless. The best part...always solving problems with great
+                    original ideas!."
+                  </p>
+                </div>
+              </div>
+              <div class="lg:w-1/3 md:w-1/2 sm:w-2/3 w-full p-4">
+                <div
+                  class="bg-white lg:p-10 md:p-8 sm:p-7 p-6 rounded-2xl h-full animateFromBottom translate-y-1/2 opacity-0"
+                >
+                  <div
+                    class="flex items-center gap-5 justify-center flex-wrap text-center"
+                  >
+                    <img
+                      src="assets/images/htLogo.webp"
+                      alt="..."
+                      class="w-32"
+                    />
+                    <div class="w-full">
+                      <h3
+                        class="text-2xl font-medium text-slate-800 leading-none"
+                      >
+                        Hindustan Times
+                      </h3>
+                      <p
+                        class="text-slate-600 font-normal leading-none text-base mt-1"
+                      >
+                        Senior Program Manager
+                      </p>
+                    </div>
+                  </div>
+                  <p class="text-slate-700 font-normal text-base mt-8">
+                    "Patience. Infinite patience. No shortcuts. Very well
+                    thought out and articulate communication. Clear milestones,
+                    deadlines and fast work. Even if the client is being
+                    careless. The best part...always solving problems with great
+                    original ideas!."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Footer -->
+        <footer class="overflow-hidden bg-white">
+          <div class="bg-slate-800 lg:grid lg:grid-cols-5">
+            <div class="relative block h-[45vh] lg:col-span-2 lg:h-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.363116397493!2d77.38022607528856!3d28.61887727567225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef307cd610c1%3A0x14668855bd575700!2sWrocus%20Technologies!5e0!3m2!1sen!2sin!4v1720172169326!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="border-2 border-[#005064]"
+              ></iframe>
+            </div>
+            <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+              <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+                <div>
+                  <p>
+                    <span
+                      class="text-xs font-medium uppercase tracking-wide text-gray-300 animateFromBottom translate-y-1/2 opacity-0"
+                    >
+                      Call us
+                    </span>
+                    <a
+                      href="#"
+                      class="block text-xl font-light text-white hover:opacity-75 sm:text-2xl hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                    >
+                      0120-496-3453
+                    </a>
+                  </p>
+                  <p class="mt-4">
+                    <span
+                      class="text-xs font-medium uppercase tracking-wide text-gray-300"
+                    >
+                      Mail us
+                    </span>
+                    <a
+                      href="#"
+                      class="block text-xl font-light text-white hover:opacity-75 sm:text-2xl hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                    >
+                      info@wrocus.com
+                    </a>
+                  </p>
+                  <p class="mt-4">
+                    <span
+                      class="text-xs font-medium uppercase tracking-wide text-gray-300"
+                    >
+                      Locate us
+                    </span>
+                    <a
+                      href="#"
+                      class="block text-xl font-light text-white hover:opacity-75 sm:text-2xl hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                    >
+                      C Block, Sector 65, Noida, Uttar Pradesh 201307
+                    </a>
+                  </p>
+                  <ul class="mt-8 flex gap-6">
+                    <li>
+                      <a
+                        href="#"
+                        rel="noreferrer"
+                        target="_blank"
+                        class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                      >
+                        <span class="sr-only">Facebook</span>
+
+                        <svg
+                          class="h-6 w-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        rel="noreferrer"
+                        target="_blank"
+                        class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                      >
+                        <span class="sr-only">Instagram</span>
+
+                        <svg
+                          class="h-6 w-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        rel="noreferrer"
+                        target="_blank"
+                        class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                      >
+                        <span class="sr-only">Twitter</span>
+
+                        <svg
+                          class="h-6 w-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        rel="noreferrer"
+                        target="_blank"
+                        class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                      >
+                        <span class="sr-only">GitHub</span>
+
+                        <svg
+                          class="h-6 w-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        rel="noreferrer"
+                        target="_blank"
+                        class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                      >
+                        <span class="sr-only">Dribbble</span>
+
+                        <svg
+                          class="h-6 w-6"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div>
+                    <p
+                      class="font-medium text-white animateFromBottom translate-y-1/2 opacity-0"
+                    >
+                      Services
+                    </p>
+                    <ul class="mt-6 space-y-4 text-sm">
+                      <li>
+                        <a
+                          href="webDevelopment.html"
+                          class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                        >
+                          Web Development
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="appDevelopment.html"
+                          class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                        >
+                          App Development
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                        >
+                          UI/UX Design
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                        >
+                          QA & Testing
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                        >
+                          IT Consulting
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p
+                      class="font-medium text-white animateFromBottom translate-y-1/2 opacity-0"
+                    >
+                      Company
+                    </p>
+                    <ul class="mt-6 space-y-4 text-sm">
+                      <li>
+                        <a
+                          href="about.html"
+                          class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                        >
+                          About
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="contact.html"
+                          class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                        >
+                          Contact
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
+                        >
+                          Careers
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt-12 flex lg:justify-start w-full justify-center border-t border-white/10 pt-12"
+              >
+                <div
+                  class="sm:flex sm:items-center sm:justify-between lg:w-full"
+                >
+                  <ul class="flex flex-wrap gap-4 text-xs">
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1"
+                      >
+                        Terms & Conditions
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1"
+                      >
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1"
+                      >
+                        Cookies
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="mt-8 text-xs text-gray-200 sm:mt-0">
+                    &copy; 2022. Company Name. All rights reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
     </section>
-    <!-- Footer -->
-    <footer class="overflow-hidden bg-white">
-      <div class="bg-slate-800 lg:grid lg:grid-cols-5">
-        <div class="relative block h-[45vh] lg:col-span-2 lg:h-full">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.363116397493!2d77.38022607528856!3d28.61887727567225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef307cd610c1%3A0x14668855bd575700!2sWrocus%20Technologies!5e0!3m2!1sen!2sin!4v1720172169326!5m2!1sen!2sin"
-            width="100%"
-            height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="border-2 border-[#005064]"
-          ></iframe>
-        </div>
-        <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
-            <div>
-              <p>
-                <span
-                  class="text-xs font-medium uppercase tracking-wide text-gray-300 animateFromBottom translate-y-1/2 opacity-0"
-                >
-                  Call us
-                </span>
-                <a
-                  href="#"
-                  class="block text-xl font-light text-white hover:opacity-75 sm:text-2xl hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                >
-                  0120-496-3453
-                </a>
-              </p>
-              <p class="mt-4">
-                <span
-                  class="text-xs font-medium uppercase tracking-wide text-gray-300"
-                >
-                  Mail us
-                </span>
-                <a
-                  href="#"
-                  class="block text-xl font-light text-white hover:opacity-75 sm:text-2xl hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                >
-                  info@wrocus.com
-                </a>
-              </p>
-              <p class="mt-4">
-                <span
-                  class="text-xs font-medium uppercase tracking-wide text-gray-300"
-                >
-                  Locate us
-                </span>
-                <a
-                  href="#"
-                  class="block text-xl font-light text-white hover:opacity-75 sm:text-2xl hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                >
-                  C Block, Sector 65, Noida, Uttar Pradesh 201307
-                </a>
-              </p>
-              <ul class="mt-8 flex gap-6">
-                <li>
-                  <a
-                    href="#"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                  >
-                    <span class="sr-only">Facebook</span>
-
-                    <svg
-                      class="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                  >
-                    <span class="sr-only">Instagram</span>
-
-                    <svg
-                      class="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                  >
-                    <span class="sr-only">Twitter</span>
-
-                    <svg
-                      class="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                      />
-                    </svg>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                  >
-                    <span class="sr-only">GitHub</span>
-
-                    <svg
-                      class="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                  >
-                    <span class="sr-only">Dribbble</span>
-
-                    <svg
-                      class="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div>
-                <p
-                  class="font-medium text-white animateFromBottom translate-y-1/2 opacity-0"
-                >
-                  Services
-                </p>
-                <ul class="mt-6 space-y-4 text-sm">
-                  <li>
-                    <a
-                      href="webDevelopment.html"
-                      class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                    >
-                      Web Development
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="appDevelopment.html"
-                      class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                    >
-                      App Development
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                    >
-                      UI/UX Design
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                    >
-                      QA & Testing
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                    >
-                      IT Consulting
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p
-                  class="font-medium text-white animateFromBottom translate-y-1/2 opacity-0"
-                >
-                  Company
-                </p>
-                <ul class="mt-6 space-y-4 text-sm">
-                  <li>
-                    <a
-                      href="about.html"
-                      class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                    >
-                      About
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="contact.html"
-                      class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                    >
-                      Contact
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1 animateFromBottom translate-y-1/2 opacity-0"
-                    >
-                      Careers
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div
-            class="mt-12 flex lg:justify-start w-full justify-center border-t border-white/10 pt-12"
-          >
-            <div class="sm:flex sm:items-center sm:justify-between lg:w-full">
-              <ul class="flex flex-wrap gap-4 text-xs">
-                <li>
-                  <a
-                    href="#"
-                    class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1"
-                  >
-                    Terms & Conditions
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-gray-200 transition hover:opacity-75 font-light hover:underline decoration-1"
-                  >
-                    Cookies
-                  </a>
-                </li>
-              </ul>
-              <p class="mt-8 text-xs text-gray-200 sm:mt-0">
-                &copy; 2022. Company Name. All rights reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
